@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* HEADER */
+
+html, body {
+    height: 105.7%;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1)),url('../img/balatro2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column; /* organizar en columna */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    flex: 1;;
+}
+.container-header{
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header header .logo a{
+    font-family: 'Righteous',cursive;
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.container-header header nav ul li a:hover{
+    color: #1cb698;
+}
+
+
+
+/* Titulo */
+h2{text-align: center;
+    color: #1cb698;
+    padding-bottom: 120px;
+    padding-top: 9%;
+    font-size: 60px;
+    font-family: 'Righteous',cursive;
+}
+    
+    /* Producto */
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+
+    .ecard{
+        background: #222222b0;
+        border-radius: 15px;
+        width: 500px;
+        height: 680px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px 10px 20px 20px;
+        transition: transform 0.3s ease;
+        align-content: center;
+    }
+    
+    .ecard img{
+        width: 450px;
+        height: 280px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: 8px;
+    }
+    .ecard .contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ecard h3{
+        font-family: righteous,;
+        margin: 10px 0 55px;
+        font-size: 36px;
+        color: white;
+    }
+    .ecard p{
+        font: righteous;
+        font-size: 16px;
+        color: white;
+        margin: 10px 0 10px;
+    }
+    
+    .ecard button:hover{
+        background: #101dcc;
+        color: #fff;
+    }
+    .ecard:hover{
+        transform: scale(1.05);
+    }
+
+
+
+    .ecard a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        align-content: center;
+        justify-content: center;
+        color: white;
+        margin: 30px;
+        width: 150px;
+        height: 20px;
+        border-radius: 8px;
+        margin-top: 8px;
+    }
+
+
+/* FOOTER */
+footer{
+    background: black;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: -12%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+footer .redes a:hover{
+    background-color: #1cb698;
+    border-color: #1cb698;
+    transform: scale(1.1);
+}
