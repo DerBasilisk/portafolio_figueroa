@@ -1,0 +1,336 @@
+/* ===========================
+   ANIMATED BACKGROUND OVERLAY
+   =========================== */
+   body:before {
+    content: " ";
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-image: url(https://i.redd.it/a3degnm23yhc1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: yourAnimation 5s ease 1s 1 normal forwards;
+    pointer-events: none;
+  }
+  @keyframes yourAnimation {
+    0% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* ===========================
+     PAGE BACKGROUND
+     =========================== */
+  body {
+    background: url(https://media1.tenor.com/m/-5cUwZ8eftAAAAAd/sancho-don-quixote-limbus-company-canto-7-mili-hero.gif);
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0;
+    height: 100vh;
+    cursor: url('https://media.discordapp.net/attachments/985917129528320000/1326316474088030280/Normal-Select.png?format=webp&quality=lossless&width=64&height=64'), auto;
+  }
+  
+  /* ===========================
+     FONT IMPORTS
+     =========================== */
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@700&family=Patrick+Hand&family=Paytone+One&display=swap');
+  
+  /* ===========================
+     TEXT STYLES
+     =========================== */
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffedf9;
+    text-transform: lowercase !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    text-transform: none !important;
+  }
+  
+  /* ===========================
+     NAME + HEADERS
+     =========================== */
+  h1 {
+    font-size: 30px !important;
+    font-family: 'Paytone One', sans-serif;
+    text-transform: uppercase !important;
+    padding-left: 2px !important;
+  }
+  .profile h1 {
+    background: -webkit-linear-gradient(#FFEF23, #ef0409);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h4 {
+    font-size: 16px !important;
+    font-family: 'Paytone One', sans-serif;
+    text-transform: uppercase !important;
+    padding-left: 2px !important;
+    background: -webkit-linear-gradient(#FFEF23, #ef0409);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .profile .blurbs .section h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: lowercase !important;
+    color: white;
+  }
+  
+  /* ===========================
+     NAVIGATION
+     =========================== */
+  nav {
+    font-size: 13px !important;
+    font-family: 'Paytone One', sans-serif;
+    text-shadow: 1px 1px black;
+    text-align: center;
+  }
+  nav .links {
+    background-color: transparent;
+  }
+  nav .links a:hover {
+    color: rgba(255, 199, 226, 1);
+  }
+  nav .top {
+    background-color: transparent;
+  }
+  
+  /* ===========================
+     LINK COLORS + CURSORS
+     =========================== */
+  a {
+    color: #b20019;
+  }
+  a:hover {
+    color: white;
+    cursor: url('https://media.discordapp.net/attachments/985917129528320000/1326316474385563699/Alternate-Select_-Link-Select.png?format=webp&quality=lossless&width=64&height=64'), auto;
+  }
+  
+  /* ===========================
+     MAIN CONTAINER
+     =========================== */
+  main {
+    background: rgba(48, 63, 149, 0.4);
+    border-radius: 15px;
+    border: 2px dotted rgba(28, 31, 51, 1);
+  }
+  main:before {
+    width: 100%;
+    height: 180px;
+    display: block;
+    content: "";
+    background-image: url('https://media1.tenor.com/m/bUsujCMjvsEAAAAd/limbus-company-limbus.gif');
+    background-position: center center;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 500px) {
+    main:before { height: 100px; }
+  }
+  
+  /* ===========================
+     PROFILE BOXES + BLURBS
+     =========================== */
+  .profile .blurbs .heading,
+  .profile .friends .heading {
+    background-color: rgba(48, 63, 149, 0.4);
+    border-radius: 15px;
+    border: 3px dotted rgba(28, 31, 51, 0.65);
+    text-transform: lowercase !important;
+    color: white;
+  }
+  .profile .blurbs .section h4,
+  .profile .friends .inner {
+    text-align: center;
+  }
+  .count {
+    color: #d40008;
+  }
+  .profile .friends .person p {
+    color: #d40008;
+  }
+  .profile .friends .person p:hover {
+    color: #d40008;
+  }
+  
+  /* ===========================
+     FRIENDS IMAGES
+     =========================== */
+  .profile .friends .person img:not(.icon) {
+    border-radius: 15px;
+    box-shadow: 1px 0px 7px 2px rgba(48, 63, 149, 0.71);
+    border: 3px dotted rgba(28, 31, 51, 1);
+  }
+  
+  /* ===========================
+     TABLES + CONTACT
+     =========================== */
+  .profile .contact,
+  .profile .table-section {
+    background-color: rgba(48, 63, 149, 0.4);
+    border: 2px dashed rgba(28, 31, 51, 1);
+  }
+  .profile .contact .heading,
+  .profile .table-section .heading,
+  .home-actions .heading {
+    background-color: rgba(48, 63, 149, 0.4);
+  }
+  .profile .table-section .details-table td {
+    background-color: rgba(48, 63, 149, 0.58);
+  }
+  .profile .friends .comments-table td {
+    background-color: rgba(48, 63, 149, 0.4);
+    border: 1px solid rgba(28, 31, 51, 0.5);
+  }
+  table.comments-table {
+    border: 2px dashed rgba(28, 31, 51, 1);
+  }
+  
+  /* ===========================
+     BLOG PREVIEW BOX
+     =========================== */
+  div.blog-preview {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(171, 118, 207, 0.4);
+    color: white;
+    border-radius: 15px;
+    border: 5px dotted rgba(28, 31, 51, 0.65);
+    text-transform: lowercase !important;
+  }
+  
+  /* ===========================
+     FLOATING ANIMATION
+     =========================== */
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 5px); }
+    100% { transform: translate(0, -0px); }
+  }
+  .profile-pic,
+  .profile .friends .person img:not(.icon),
+  .profile .friends .person p,
+  .profile h1 {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  /* ===========================
+     PROFILE PIC OVERRIDE (GIF)
+     =========================== */
+  .profile-pic > img { display: none; }
+  .profile-pic:after {
+    background-image: url("https://media1.tenor.com/m/18v-y7sob4cAAAAd/sancho-don-quixote-lamanchaland-bloodfiend.gif");
+    background-size: cover;
+    width: 160px;
+    height: 150px;
+    display: inline-block;
+    content: "";
+    border: 2px dashed rgba(28, 31, 51, 1);
+    box-shadow: 1px 0px 10px 2px rgba(48, 63, 149, 0.46);
+  }
+  
+  /* ===========================
+     CONTACT ICONS (REPLACED WITH EMOJIS)
+     =========================== */
+  .contact .inner a img { font-size: 0; }
+  .contact .inner a img:before {
+    font-size: 1em;
+    display: block;
+  }
+  .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before { content: "⭐"; }
+  .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before { content: "🌟"; }
+  .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before { content: "🌠"; }
+  .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before { content: "💫"; }
+  .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before { content: "✨"; }
+  .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before { content: "👾"; }
+  .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before { content: "🌙"; }
+  .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before { content: "🛰️"; }
+  
+  /* ===========================
+     LOGO
+     =========================== */
+  .logo {
+    content: url("https://media.discordapp.net/attachments/985917129528320000/1326327580105642014/spacehey_limbus_2.png?format=webp&quality=lossless&width=2160&height=550");
+  }
+  
+  /* ===========================
+     FOOTER
+     =========================== */
+  footer {
+    color: white !important;
+    text-decoration: underline dotted !important;
+    background-color: rgba(0, 0, 0, 0.82);
+  }
+  
+  /* ===========================
+     GENERAL ABOUT / ONLINE ICON
+     =========================== */
+  .general-about {
+    position: relative;
+    margin-top: 30px;
+  }
+  .online {
+    content: url(https://sillyblinkies.nekoweb.org/online/catonline.gif);
+  }
+  
+  /* ===========================
+     VINYL GALLERY
+     =========================== */
+  #vinyl-gallery * { all: unset; }
+  #vinyl-gallery {
+    all: initial !important;
+    width: 100% !important;
+    height: 230px !important;
+    margin: 30px 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative !important;
+    margin-left: -6px !important;
+  }
+  #vinyl-gallery .vinyl {
+    all: unset !important;
+    perspective: 500px !important;
+    width: 18px !important;
+    transition: width 0.5s !important;
+  }
+  #vinyl-gallery .vinyl:hover {
+    width: 148px !important;
+  }
+  #vinyl-gallery img {
+    all: unset !important;
+    transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s !important;
+    width: 180px !important;
+    height: 180px !important;
+    transform: rotateX(0deg) rotateY(25deg) !important;
+    transform-style: preserve-3d !important;
+    border-radius: 4px !important;
+    border: 2px solid rgba(0, 0, 0, 0.1) !important;
+    object-fit: cover !important;
+  }
+  #vinyl-gallery .vinyl:hover img {
+    transform: rotateX(0deg) rotateY(10deg) !important;
+    width: 188px !important;
+    height: 188px !important;
+    margin-top: -2px !important;
+  }
+  #vinyl-gallery .title {
+    color: #000;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-left: 6px;
+  }
+  #vinyl-gallery .vinyl:nth-child(n):hover + .title {
+    visibility: visible;
+  }
+  

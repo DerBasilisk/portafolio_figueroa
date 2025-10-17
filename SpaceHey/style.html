@@ -1,0 +1,558 @@
+<style>
+    body:before {
+    content: " ";
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 100;
+    background-image: url(https://i.redd.it/a3degnm23yhc1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    animation: yourAnimation 5s ease 1s 1 normal forwards;
+    pointer-events: none;}
+    @keyframes yourAnimation { 0.0%{ opacity: 1;} 75%{ opacity: 1; } 100%{ opacity: 0;} } 
+    </style>
+    
+    <style>
+        /* profile background/the image behind the profile box */
+        body { background: url(https://media1.tenor.com/m/-5cUwZ8eftAAAAAd/sancho-don-quixote-limbus-company-canto-7-mili-hero.gif) ; background-size: cover; background-repeat: repeat; margin: 0; height: 100vh; }
+        </style>
+        
+        <style>
+        /* this is the color of any text that you input */ 
+        @import url('https:å//fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+        .profile .blurbs .section h4{
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform:lowercase !important;
+        color: white;
+        }
+        </style>
+        
+        <style> 
+        /* these are the colors for headers */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+        p{
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform:lowercase !important;
+        color:#ffedf9;
+        }
+        </style>
+        
+        <style>
+        /* this adjusts the size/font of your name */
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Paytone+One&display=swap');
+        h1{
+        font-size: 30px !important;
+        font-family: 'Paytone One', sans-serif;	
+        text-transform:uppercase !important;
+        padding-left: 2px !important;
+        }
+        </style> 
+        
+        <style> 
+        /* this changes the color of your name */
+        .profile h1{
+        background: -webkit-linear-gradient(#FFEF23, #ef0409);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        </style>
+        
+        <style>
+        /* this changes the color of your headers */
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Paytone+One&display=swap');
+        h4{
+        font-size: 16px !important;
+        font-family: 'Paytone One', sans-serif;	
+        text-transform:uppercase !important;
+        padding-left: 2px !important;
+        /* gradient text, you can replace existing colors with whatever ones you want */
+        background: -webkit-linear-gradient(#FFEF23, #ef0409);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        }
+        </style> 
+        
+        <style>
+        /* this is what makes the text bold/look bigger */
+        p{
+        font-size: 14px !important;
+        font-weight: bold;
+         text-transform:none !important;
+        }
+        </style> 
+        
+        <style>
+        /* links in the navigation bar @ the top */
+        nav{ 
+        font-size: 13px !important;
+        font-family: 'Paytone One', sans-serif;
+        text-shadow: 1px 1px black;
+        text-transform:none;
+        padding-left:3px;
+        text-align: center;
+        }
+        </style>
+        
+        <style>
+        /* this centers your friend space */
+            .profile .friends .inner, .profile .blurbs .section h4{
+            text-align: center;
+            }
+        </style>
+        
+        <style>
+        /* the color of the number of your friends */
+            .count {
+                color: #d40008;
+            }
+        </style>
+        
+        <style>
+        /* link colors when you hover over links */
+           a:hover {
+             color: white; 
+           } 
+           a{
+             color: #b20019; 
+           }
+        </style>
+        
+        <style>
+        /* cursors: top URL is the cursor that shows when you hover over links, bottom URL is the main or "resting" cursor */
+        /* https://cursors-4u.net */
+        a:hover {    
+         cursor: url('https://media.discordapp.net/attachments/985917129528320000/1326316474385563699/Alternate-Select_-Link-Select.png?ex=68a05d39&is=689f0bb9&hm=e65f5abb44d73fb0f7315d0c88836cb19e3377a09ea1d948b5a4ad6e5ecd3e87&=&format=webp&quality=lossless&width=64&height=64'), auto;
+        }
+        * {
+         cursor: url('https://media.discordapp.net/attachments/985917129528320000/1326316474088030280/Normal-Select.png?ex=68a05d39&is=689f0bb9&hm=360db7d1bf624535533cc3838c500a9ad56f6ade30f8c396637946962ffe020e&=&format=webp&quality=lossless&width=64&height=64'), auto;
+        }
+        </style>
+        
+        
+        <style>
+        /* main profile background/the box that has all your text */
+        /* use https://rgbacolorpicker.com/ to pick a different color and adjust it's opacity */
+        main {
+        background: rgba(48, 63, 149, 0.4);
+        border-radius:15px;
+        border: 2px dotted rgba(28, 31, 51, 1)
+        }
+        </style>
+        
+        
+        <style>
+        /* this is the background color for the headings of your blurbs, friend space + comments */
+        .profile .blurbs .heading, .profile .friends .heading {
+        color: white;
+        background-color:rgba(48, 63, 149, 0.4);
+        text-transform:lowercase !important;
+        color: white;
+        border-radius:15px;
+        border: 3px dotted rgba(28, 31, 51, 0.65)
+        }
+        </style>
+        
+        <style>
+        /* links to your friends' profiles */
+        .profile .friends .person p {
+        color: #d40008;  
+        }
+        .profile .friends .person p:hover {
+        color: #d40008;  
+        }
+        </style>
+        
+        <style> 
+        /* this is the box that says "_'s latest blog entries" */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+        DIV.blog-preview{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        background-color:rgba(171, 118, 207, 0.4);
+        text-transform:lowercase !important;
+        color: white;
+        border-radius:15px;
+        border: 5px dotted rgba(28, 31, 51, 0.65)
+        }
+        </style>
+        
+        <style>
+        /* this edits your friends' icons */
+        .profile .friends .person img:not(.icon) {
+        border-radius:15px;
+        box-shadow: 1px 0px 7px 2px rgba(48, 63, 149, 0.71);
+        border: 3px dotted rgba(28, 31, 51, 1)
+        }
+        </style>
+        
+        
+        <style>
+        /* these are the colors for the table headings on the left */
+        .profile .contact .heading, .profile .table-section .heading, .home-actions .heading {
+        background-color: rgba(48, 63, 149, 0.4);
+        }
+        </style>
+        
+        <style>
+        /* contacting "_" */
+        .profile .contact {
+        background-color: rgba(48, 63, 149, 0.4);
+        }
+        </style>
+        
+        <style>
+        /* friend comments */
+        .profile .friends .comments-table td {
+        background-color: rgba(48, 63, 149, 0.4);
+        border: 1px solid rgba(28, 31, 51, 0.5);  
+        }
+        .comments-table td*{
+            
+            
+        }
+        </style>
+        
+        
+        <style>
+        /* colors for interest section */
+        .profile .table-section .details-table td {
+        background-color:rgba(48, 63, 149, 0.58);
+        }
+        </style>
+        
+        <style>
+        /* navigation bar at the top/the bar that has navigation links */
+        nav .links {
+        background-color: transparent;
+        }
+        nav .links a:hover {
+        color: rgba(255, 199, 226, 1);
+        }
+        </style>
+        
+        <style>
+        nav .top{
+        /* navigation bar at the top/the bar that has the search and spacehey logo */
+        background-color: transparent;
+        }
+        </style>
+        
+        <style>
+    
+    : ;
+    }
+        @keyframes floating {
+            0% { transform: translate(0,  0px); }
+            50%  { transform: translate(0, 5px); }
+            100%   { transform: translate(0, -0px); }   
+        }
+        /* gif profile picture */
+        .profile-pic > img { display:none; }
+        .profile-pic:after { background-image: url("https://media1.tenor.com/m/18v-y7sob4cAAAAd/sancho-don-quixote-lamanchaland-bloodfiend.gif"); display: inline-block; content:"" }
+        .general-about .profile-pic:after { background-size: cover; width: 160px; height: 150px; } 
+        .profile-pic:after{ 
+          border: 2px dashed  rgba(28, 31, 51, 1);  
+          box-shadow: 1px 0px 10px 2px rgba(48, 63, 149, 0.46);
+         }   
+        </style>
+        
+        
+        <style>
+        /* floating animations */
+        .profile-pic, .profile .friends .person img:not(.icon), .profile .friends .person p, .profile h1{ 
+            animation-name: floating;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 0px;
+            margin-top: 0px;
+        }    
+        </style>
+        
+        
+        <style>
+        /* pink dashed borders */
+        .profile .url-info {
+        border: 2px dashed  rgba(28, 31, 51, 1);    
+        }
+        .profile .contact {
+        border: 2px dashed  rgba(28, 31, 51, 1);     
+        }
+        .profile .table-section {
+        border: 2px dashed  rgba(28, 31, 51, 1);     
+        }
+        
+        </style>
+        
+        <style>
+        /* border inside of comments */
+        table.comments-table {
+        border: 2px dashed rgba(28, 31, 51, 1);      
+        }    
+        </style>
+        
+        <style>
+        
+        .logo {
+        
+        content:url("https://media.discordapp.net/attachments/985917129528320000/1326327580105642014/spacehey_limbus_2.png?ex=68a06791&is=689f1611&hm=fed45e6c71324b8ae03eea3ffbefbdc0e5b0b9d306c994ae585a5ece29c6027c&=&format=webp&quality=lossless&width=2160&height=550");
+        
+        }
+        
+        </style>
+        
+        <style>
+        /* contact icons */
+        .contact .inner a img {
+        font-size: 0;
+        }
+        .contact .inner a img:before {
+        font-size: 1em;
+        display: block
+        }
+        .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {
+        /* add to friends */
+        content: "⭐"
+        }
+        .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {
+        /* add to favorite */
+        content: "🌟"
+        }
+        .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {
+        /* send a message */
+        content: "🌠"
+        }
+        .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {
+        /* foward to friend*/
+        content: "💫"
+        }
+        .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {
+        /* instant message */
+        content: "✨"
+        }
+        .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {
+        /* block user */
+        content: "👾"
+        }
+        .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {
+        /* add 2 group  */
+        content: "🌙"
+        }
+        .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {
+        /* report */
+        content: "🛰️"
+        }   
+        </style>
+        
+        <style>
+        footer {
+        color: white !important;
+        text-decoration: underline !important;
+        text-decoration-style: dotted !important;
+        background-color: rgba(0, 0, 0, 0.82);
+          }    
+        
+        <!----- SONG SONG SONG SONG ---->
+        
+        </style>
+        
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/ibETuFo9oSQ?si=n_mQJQyDpBXxYh7g&amp//?&;amp;autoplay=1&;loop=1&;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy">
+        </iframe>
+        
+        <!----- VINYL VINYL VINYL VINYL ---->
+        
+        <style>
+        #vinyl-gallery * {
+            all: unset;
+          }
+         
+          #vinyl-gallery {
+            all: initial!important;
+            width: 100%!important;
+            height: 230px!important;
+            margin: 30px 0!important;
+            display: flex!important;
+            flex-direction: row!important;
+            position: relative!important;
+            margin-left: -6px!important;
+          }
+         
+          #vinyl-gallery .vinyl {
+              all:unset!important;
+            perspective: 500px !important;
+            width: 18px!important;
+            transition: width 0.5s!important;
+          }
+         
+          #vinyl-gallery .vinyl:hover {
+            width: 148px!important;
+          }
+         
+          #vinyl-gallery img {
+              all:unset!important;
+            transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s!important;
+            width: 180px!important;
+            height: 180px!important;
+            transform: rotateX(0deg) rotateY(25deg)!important;
+            transform-style: preserve-3d!important;
+            border-radius: 4px!important;
+            border: 2px solid rgba(0, 0, 0, 0.1)!important;
+        object-fit: cover!important;
+          }
+         
+          #vinyl-gallery .vinyl:hover img {
+            transform: rotateX(0deg) rotateY(10deg)!important;
+            width: 188px!important;
+            height: 188px!important;
+            margin-top: -2px!important;
+          }
+         
+          #vinyl-gallery .title {
+            color: #000000;
+            display: block;
+            visibility: hidden;
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            width: 100%;
+            padding-left: 6px;
+          }
+         
+          #vinyl-gallery .vinyl:nth-child(n):hover + .title {
+            visibility: visible;
+          }
+        
+        </style>
+        <div id="vinyl-gallery">
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/94b0ce11d15ec454a933d010c9c287c0/13418839"/>
+          </div>
+          <div class="title">Tian Tian - Mili</div>
+    
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/2b48116e98b122022fb1652561a7d570/12724528"/>
+          </div>
+          <div class="title">Hero - Mili</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/ae3e180de7d081f3c2db56797569d37b/12132578"/>
+          </div>
+          <div class="title">Through Patches Of Violet - Mili</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/dad64b8e6d4a2064b827f374395d3757/11630569"/>
+          </div>
+          <div class="title">Compass - Mili</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/117e1742227385ce961868d230c29fc8/11301804"/>
+          </div>
+          <div class="title">Fly, My Wings - Mili</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/808701ca679847c137e095c149f76cdc/9436800"/>
+          </div>
+          <div class="title">Mili - To Kill a Living Book</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/fd9dd8f562a1aac03c3452d90ccdb85d/11611836"/>
+          </div>
+          <div class="title">Chonny Jash - That Handsome Devil Power Hour</div>
+      
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/5a8746be91275f69389e19605721e20b/12178700"/>
+          </div>
+          <div class="title">Mesmerizer - Satsuki</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/a8e9af3a9091e782451d0c985095c914/9734402"/>
+          </div>
+          <div class="title">Kyu-Kurarin -  Iyowa ft. Kafu </div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/f70025097000476df489301b5d5bf05f/11386786"/>
+          </div>
+          <div class="title">Inabakimori - Anti Cyclone</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/72c4f476664595b32d930637b2d919f3/12189964"/>
+          </div>
+          <div class="title">Live in Life - Will Stetson</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/2d7a07fc57d93afecb8a184e26458733/12189924"/>
+          </div>
+          <div class="title">Writing on the Wall - Will Stetson</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/bbfe1937a44959c86ba786a58b5fa502/11790167"/>
+          </div>
+          <div class="title">Digital Hallucination - OR3O</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/b7aa44e6c1ad393770ea8146eb07a3f7/11999602"/>
+          </div>
+          <div class="title">The Most Fashionable Faction - The Stupendium</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/4bc156238e48c4885546111e7327f7f0/11217515"/>
+          </div>
+          <div class="title">SIAMES - Bounce Into The Music</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/5ea77039924e2c70a965cc3095d6acac/11494614"/>
+          </div>
+          <div class="title">AJR - The Maybe Man</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/f31ba8fe6e6d3e21b09fe965a202eddd/13333385"/>
+          </div>
+          <div class="title">The Living Tombstone - Rust</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/d77495a83c217e980f137a6a8a28a89f/12277945"/>
+          </div>
+          <div class="title">The Living Tombstone - zero_one</div>
+        
+          <div class="vinyl">
+            <img src="https://e.snmc.io/i/300/w/cd7c27fceb4f6413d8265b689fcf4895/9310532"/>
+          </div>
+          <div class="title">That Handsome Devil - The Heart Goes to Heaven, the Head Goes to Hell</div>
+        </div>
+        
+        <style>
+        
+        main:before {
+            width: 100%;
+            height: 180px;
+            display: block;
+            content: "";
+            background-image: url('https://media1.tenor.com/m/bUsujCMjvsEAAAAd/limbus-company-limbus.gif');
+            background-position: center center;
+            background-size: cover;
+        }
+        @media only screen and (max-width: 500) {
+            main:before{
+                height: 100;
+            }
+        }
+        
+        </style>
+        
+        <img src="https://limbuscompany.wiki.gg/images/7/7b/Don_Quixote_Signature.png"/>
+        
+        <style>
+        .general-about{
+          position: relative;
+          margin-top: 30px;
+        }
+        .online {
+            content: url(https://sillyblinkies.nekoweb.org/online/catonline.gif);
+        }
+        </style>
